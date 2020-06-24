@@ -1,0 +1,7 @@
+.blog-tile {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.blog-title {
+  font-size: 0.9rem;
+}

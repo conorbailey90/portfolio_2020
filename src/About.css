@@ -1,0 +1,110 @@
+.about {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+.about-me {
+  position: absolute;
+  top: 8rem;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.seperator {
+  border-bottom: 1px solid var(--secondary-color);
+  margin-bottom: 1em;
+}
+
+.bio-pic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bio {
+  width: 50%;
+  font-size: 0.9rem;
+  margin-top: 1em;
+}
+
+.photo {
+  width: 50%;
+  text-align: center;
+}
+.photo img {
+  margin-top: 1em;
+  width: 30%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skills {
+  width: 100%;
+  height: 20%;
+}
+
+.skill-list {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.skill-list p {
+  font-size: 0.7rem;
+}
+
+.svg-inline--fa {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+  }
+  .about-me {
+    position: absolute;
+    top: 8rem;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+  .bio-pic {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .bio {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 1em;
+  }
+
+  .photo {
+    width: 100%;
+    text-align: center;
+  }
+  .skill-list p {
+    display: none;
+  }
+
+  .svg-inline--fa {
+    font-size: 1.5rem;
+  }
+}

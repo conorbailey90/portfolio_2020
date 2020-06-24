@@ -1,0 +1,40 @@
+.mode-switch {
+  position: absolute;
+  width: 40px;
+  top: 2rem;
+  left: 10%;
+  height: 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  transform: translateY(-50%);
+  background-color: #fdcba7;
+}
+
+.mode-ball-light {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin: 1px;
+  left: 1px;
+  transition: 0.5s;
+}
+.mode-ball-dark {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin: 1px;
+  right: 1px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  .mode-switch:hover,
+  .mode-ball-light,
+  .mode-ball-dark {
+    cursor: pointer;
+  }
+}

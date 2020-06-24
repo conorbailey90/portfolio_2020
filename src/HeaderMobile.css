@@ -1,0 +1,91 @@
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  z-index: 3000;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+.mobile-header-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-logo {
+  position: relative;
+  width: 50%;
+  /* z-index: 500; */
+  font-size: 1rem;
+}
+
+.mobile-logo h3:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-color);
+  z-index: -2;
+  transition: 0.5s ease;
+}
+
+.mobile-nav.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-color: var(--main-color);
+  z-index: 9997;
+  transition: 0.5s ease;
+}
+.mobile-nav ul {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.menu-tog {
+  font-size: 1rem;
+}
+
+.menu-tog:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.close-tog {
+  position: absolute;
+  right: 10%;
+  top: 4rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-header,
+  .mobile-nav {
+    display: none;
+  }
+}
