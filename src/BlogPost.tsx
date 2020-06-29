@@ -9,7 +9,9 @@ const BlogPost = () => {
 
   useEffect(() => {
     let postId = +window.location.pathname.split("/")[2];
-    let url = `http://localhost:8000/${postId}`;
+
+    let url = `https://www.conorbaileyapi.xyz/${postId}/`;
+    console.log(url);
     fetch(url)
       .then((res) => {
         return res.json();

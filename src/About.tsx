@@ -39,7 +39,7 @@ const About = () => {
             <p className="bio">
               I am a Full Stack Developer and graduate of the Udacity Full Stack
               Web Developer and Data Analysis Nanodegree programmes. I have a
-              large passion for learning, technology and sofware development /
+              large passion for learning, technology and software development /
               engineering. I am currently documenting my journey on Youtube
               where I regularly post tutorials covering multiple programming
               languages and technologies. In my spare time I'm also interested

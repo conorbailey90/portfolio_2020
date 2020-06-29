@@ -34,24 +34,24 @@ const Blog = () => {
 
   // Retrieve blog posts and set the blog post state
   useEffect(() => {
-    let url = "http://localhost:8000/";
+    let url = "https://www.conorbaileyapi.xyz";
     fetch(url)
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setPostNum(data.length);
+        console.log(data);
         let posts = [];
         for (let i = pagination; i < pagination + 4; i++) {
           posts.push(data[i]);
         }
+
         setBlogPosts(posts);
       });
   }, [pagination]);
 
   function next() {
-    // console.log(postNum);
     if (pagination === postNum - 4) return;
     setPagination(pagination + 1);
   }
@@ -64,24 +64,25 @@ const Blog = () => {
   return (
     <div>
       <section className="blog">
-        {/* <Header /> */}
         <div className="blog-container">
           <div className="seperator">
             <h1 className="about-title">BLOG</h1>
           </div>
 
           <div className="posts">
-            {blogPosts.map((post) => {
-              return (
-                <BlogTile
-                  key={post.id}
-                  id={post.id}
-                  title={post.title}
-                  summary={post.summary}
-                  image_source={post.image_source}
-                />
-              );
-            })}
+            {blogPosts.length > 3
+              ? blogPosts.map((post) => {
+                  return (
+                    <BlogTile
+                      key={post.id}
+                      id={post.id}
+                      title={post.title}
+                      summary={post.summary}
+                      image_source={post.image_source}
+                    />
+                  );
+                })
+              : ""}
           </div>
           <div className="pagination-btns">
             <div className="btn" onClick={previous}>

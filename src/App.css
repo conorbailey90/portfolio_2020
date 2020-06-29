@@ -18,6 +18,11 @@ a {
   z-index: 100;
 }
 
+.app {
+  width: 100%;
+  overflow: hidden;
+}
+
 #root {
   position: absolute;
   left: 0;

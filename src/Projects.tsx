@@ -67,7 +67,7 @@ const Projects = () => {
                 </h5>
                 <p>
                   The Company Analysis Tool was built to assist with AML (Anti
-                  Money Laundering) investgations. The app makes use of the
+                  Money Laundering) investigations. The app makes use of the
                   Puppeteer web scraping technology as well as multiple third
                   party API's (Open Corporates / DueDil) to gather company
                   information. All gathered company details are then stored in

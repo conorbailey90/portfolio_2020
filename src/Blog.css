@@ -82,4 +82,8 @@
     padding: 0.2rem;
     cursor: pointer;
   }
+  .blog-title:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
 }
