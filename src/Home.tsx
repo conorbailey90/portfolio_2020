@@ -27,7 +27,7 @@ const Home = (props: any) => {
       const headerOne = welcomeText.firstElementChild;
       const headerTwo = welcomeText.lastElementChild;
       const links = welcomeLinks;
-      console.log(headerOne, headerTwo);
+      // console.log(headerOne, headerTwo);
 
       tl.staggerFrom(
         [headerOne.children, headerTwo.children, links, canvas],

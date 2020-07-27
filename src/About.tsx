@@ -43,8 +43,8 @@ const About = () => {
               engineering. I am currently documenting my journey on Youtube
               where I regularly post tutorials covering multiple programming
               languages and technologies. In my spare time I'm also interested
-              in music production, DJing and generative art. Please don't
-              hesitate to contact me if you require further information.
+              in music production and generative art. Please don't hesitate to
+              contact me if you require further information.
             </p>
             <div className="photo">
               <img src={Photo} alt="" />

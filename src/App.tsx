@@ -21,6 +21,7 @@ library.add(fab);
 function App() {
   const [theme, setTheme] = useState("");
 
+  // Inner cursor settings
   useEffect(() => {
     let cursorOne = document.querySelector(".inner-circle") as HTMLElement;
     let links = Array.from(document.getElementsByTagName("a"));
@@ -36,6 +37,8 @@ function App() {
       });
     });
   });
+
+  // Theme settings / local storage for first site visit
   useEffect(() => {
     let theme = localStorage.getItem("theme");
 

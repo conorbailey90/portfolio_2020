@@ -8,7 +8,7 @@
   background-color: var(--main-color);
   color: var(--secondary-color);
   z-index: 2;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 canvas {
